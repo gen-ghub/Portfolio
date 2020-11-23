@@ -1,0 +1,115 @@
+<header>
+  <div class="top-logo">
+    <%= link_to image_tag 'logo.png', { anchor: "page-top" }%>
+  </div>
+  <div class="right-logo">
+    <ul>
+      <li class="me-list"><%= link_to "About me", { anchor: "page-about-me" }%></li>
+      <li class="works-list"><%= link_to "Works", { anchor: "page-works" }%></li>
+    </ul>
+  <div>
+</header>
+<div class="main-wrapper">
+  <div class="top-ber">　　</div>
+  <div class="top-wrapper">
+    <a id="papg-top"></a>
+    <%= image_tag 'back1.png'%>
+  </div>
+  <div class="me-wrapper">
+    <a id="page-about-me"></a>
+    <%= image_tag 'my-pic.png', class:"my-img"%>
+    <div class="me-main">
+      <div class="me-row">
+        <h2>About me</h2>
+      </div>
+      <div class="me-txt">
+        <ul class="me-lists">
+          <li class="me-list">名前:　genki</li>
+          <li class="me-list">出身:　滋賀県</li>
+          <li class="me-list">年齢:　26歳　</li>
+          <li class="me-list">前職:　食品・化学繊維開発、品質管理</li>
+        </ul>
+        <div>
+          <h2>学んだ言語</h2>
+          <ul class="lg-lists">
+            <li class="lg-list">
+              <%= image_tag 'html.png', class:"lg-img"%>
+              <p>HTMLとCSSを使った静的なサイトや、CSSでのアニメーションを使った動的な
+              サイトの作成が出来ます。</p>
+            </li>
+            <li class="lg-list">
+              <%= image_tag 'JavaScript.png', class:"lg-img"%>
+              <p>JavaScript使った基本的なコードやJQueryなどのライブラリを使えます。</P>
+            </li>
+            <li class="lg-list">
+              <%= image_tag 'Ruby.png', class:"lg-img"%>
+              <p>Rubyを使った基本的なコードやRuby on railsを使ったサーバーサイド側の実装が出来ます。データベースに保存したり、投稿機能等を付けることでwebアプリの作成が出来ます。</P>
+            </li>
+            <li class="lg-list">
+              <%= image_tag 'aws.png', class:"lg-img"%>
+              <p>AWSのS3というストレージを利用することで画像の保存が出来ます。
+              EC2というサーバーやHerokuを使って、デプロイをして本番環境を確かめることが出来ます。</P>
+            </li>
+          </ul>
+        </div>
+        <div class="icons">
+          <%= image_tag 'github-icon.png'%>
+          <span><%= link_to "GitHub", 'https://github.com/gen-ghub'%>　　</span>
+
+          <%= image_tag 'twitter.png'%>
+          <span><%= link_to "Twitter", 'https://twitter.com/gen10717913'%>　　</span>
+
+          <%= image_tag 'qiita.png'%>
+          <span><%= link_to "Qitta", 'https://qiita.com/gen10717913'%>　　</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="works-wrapper">
+    <a id="page-works"></a>
+    <%= image_tag 'back.png', class:"back-img"%>
+
+    <div class="works-main">
+      <div class="app1">
+        <div class="app-icon">
+          <%= link_to ' http://46.51.227.188' do%>
+            <%= image_tag 'app1.png', class:"app-logo"%>
+            <p class="app-click">アイコンをクリックでアプリへ</p>
+          <% end %>
+        </div>
+        <div class="works-content">
+          <h5 class="item-title">使用技術</h5>
+          <div class="works-txt">
+            HTTML/SCSS/Javascript/Ruby/Ruby on Rails/MySQL/AWS
+          </div>
+            <h5 class="item-title">主要機能</h5>
+            <h5 class="item">ログイン関連</h5>
+            <div class="works-txt">
+            　ログイン機能
+            </div>
+            <h5 class="item">ユーザー関連</h5>
+            <div class="works-txt">
+            　ユーザー登録機能<br>
+            　ユーザー削除機能 (登録者のみ）<br>
+            　ユーザー詳細表示機能<br>
+            　ユーザープロフィール編集機能<br>
+            　ユーザープロフィール画像アップロード機能<br>
+            </div>
+
+            <h5 class="item">投稿関連投稿機能</h5>
+            <div class="works-txt">
+            　投稿一覧表示機能<br>
+            　投稿詳細表示機能<br>
+            　投稿編集機能投稿<br>
+            　削除機能<br>
+            　投稿検索機能<br>
+            </div>
+            <h5 class="item">その他</h5>
+            <div class="works-txt">
+            　チャットルーム作成/メッセージ機能
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

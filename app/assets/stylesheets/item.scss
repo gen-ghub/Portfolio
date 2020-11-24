@@ -131,24 +131,15 @@ header{
     position: relative;
     height: 120vh;
 
-    z-index: 4;
-    & .back-img{
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background: cover;
-      z-index: 3;
-      opacity: 0.4;
-
-    }
 
     & .works-main{
       position: absolute;
       top: 20vh;
       left: 40vw;
-      
+      & h2 {
+        font-size: 50px;
+        margin-bottom: 50px;
+      }
       & .app1{
 
 

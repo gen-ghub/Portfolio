@@ -368,5 +368,24 @@ footer{
       }
     }
   }
-
+  footer{
+    height: 32px;
+    width: 120%;
+    margin-top: 40px;
+    background-color: rgba($color: #daf8b2, $alpha: 1.0);
+    position: relative;
+    & div h4 {
+      position: absolute;
+      font-size: 5px;
+      top: 12px;
+      left: 43vw;
+    }
+    & img {
+      height: 25px;
+      width: 25px;
+      position: absolute;
+      top: -23px;
+      left: 10px;
+    }
+  }
 }

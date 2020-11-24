@@ -15,9 +15,8 @@ header{
   align-items: center;
   & .top-logo{
 
-    & a{
-      color: black;
-      font-size: 40px;
+    & img{
+
     }
   }
 
@@ -177,3 +176,197 @@ header{
   }
 }
 
+footer{
+  height: 64px;
+  width: 100%;
+  margin-top: 100px;
+  background-color: rgba($color: #daf8b2, $alpha: 1.0);
+  position: relative;
+  & div h4 {
+    position: absolute;
+    top: 20px;
+    left: 43vw;
+  }
+  & img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: -47px;
+    left: 10px;
+  }
+}
+
+@media screen and (max-width:959px){
+  header{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 100%;
+    background-color: $cBgc;
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    font-size: 10px;
+    align-items: center;
+    & .top-logo{
+
+      & img{
+        width: 20vw;
+
+      }
+    }
+
+    & .right-logo{
+      right: 0;
+      margin-left: auto;
+      & ul{
+        height: 40px;
+        display: flex;
+
+        & li {
+          list-style-type: none;
+          padding-top: 10px;
+          margin: 0 5px;
+          height: 100%;
+          & a{
+            padding: 0 20px;
+            text-align: center;
+            display: block;
+            height: 100%;
+            width: 100%;
+            font-size: 15px;
+          }
+        }
+      }
+
+    }
+  }
+  .top-ber{
+    height: 32px;
+
+  }
+  .main-wrapper{
+
+    & .top-wrapper{
+      top :32px;
+      & img{
+        background: cover;
+        height: 260px;
+        width: 120vw;
+      }
+    }
+
+    & .me-wrapper{
+      background-color: $cBgc;
+      height: 80vh;
+      position: relative;
+      & .my-img{
+        position: absolute;
+        top: 17vh;
+        left: 14vw;
+        height: 10vh;
+        border-radius:10%;
+      }
+      & .me-row{
+        & h2{
+          text-align: center;
+          font-size: 30px;
+          padding-top: 10vh;
+          margin: 0 auto 4vh;
+        }
+      }
+      & .me-txt{
+        & h2{
+          text-align: center;
+          padding-top: 70px ;
+          padding-bottom: 40px ;
+          font-size: 20px;
+        }
+        & .lg-lists {
+
+
+          & .lg-list{
+            display: flex;
+            margin-left: 17vw;
+            margin-right: 3vw;
+            & p{
+              font-size: 8px;
+              padding: 10px;
+            }
+
+            & .lg-img{
+              height: 40px;
+              width: 40px;
+              background: cover;
+            }
+          }
+        }
+        & .me-lists {
+          margin-left: 44vw;
+          font-size: 10px;
+          color: black;
+          & .me-list{
+            margin-bottom: 20px;
+          }
+        }
+        & .icons {
+          margin-left: 15vw;
+          margin-top: 50px;
+          & img {
+            height: 15px;
+          }
+          & a{
+            font-size: 8px;
+          }
+
+        }
+      }
+    }
+
+    & .works-wrapper{
+      position: relative;
+      height: 120vh;
+
+
+      & .works-main{
+        position: absolute;
+        top: 20vh;
+        left: 34vw;
+        & h2 {
+          font-size: 30px;
+
+          margin-bottom: 50px;
+        }
+        & .app1{
+          & .app-icon{
+            & .app-click{
+              font-size: 8px;
+            }
+            & .app-logo{
+              height: 70px;
+              width: 140px;
+
+            }
+          }
+        }
+        & .works-content{
+
+          & h5{
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+          & .works-txt{
+            font-size: 8px;
+          }
+          & .item-title{
+            font-size: 20px;
+          }
+          & .item {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+}
